@@ -4,102 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>鼠标欺骗</title>
+    <style>
+        table {
+            table-layout: fixed;
+            width: 800px;
+            height: 100px;
+            border-spacing: 20px;
+            border: 2px black solid;
+
+        }
+
+        td {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px rgb(233, 29, 29) solid;
+
+        }
+
+        .a1:hover {
+            background-color: rgb(148, 148, 148);
+            cursor: pointer;
+        }
+
+        .a2:hover {
+            background-color: rgb(148, 148, 148);
+            cursor: move;
+        }
+
+        .a3:hover {
+            background-color: rgb(148, 148, 148);
+            cursor: wait;
+        }
+
+        .a4 {
+            cursor: not-allowed;
+        }
+
+        .a5:hover {
+            background-color: rgb(148, 148, 148);
+            cursor: grab;
+        }
+
+        .a6 {
+            cursor: progress;
+        }
+
+        #shu {
+            cursor: url("./picture/kiss.png"), pointer;
+            height: 500px;
+            background-color: rgb(141, 141, 141);
+        }
+    </style>
 </head>
 
 <body>
-    <!-- hello world -->
-    <h1 align="center">lixiaoben1</h1>
-    <h2>lixiaoben2
-        <p align="center"><strong>Lorem ipsum <em>dolor sit</em> </strong>amet consectetur adipisicing elit. Dolore
-            doloribus et eius
-            minima libero delectus earum, voluptatum, quaerat, non distinctio recusandae cum accusamus nisi eligendi
-            laudantium quidem optio vitae debitis.</p>
+    <table>
+        <caption>试试鼠标</caption>
+        <tr>
+            <td class="a1"></td>
+            <td class="a2"></td>
+            <td class="a3"></td>
+            <td class="a4"></td>
+            <td class="a5"></td>
+            <td class="a6"></td>
 
-    </h2>
-    <a href="https://baidu.com" target="_blank">apple</a>
-    <ol>
-        <li>lixiaoben1</li>
-        <li>lixiaoben1</li>
-        <li>lixiaoben1</li>
-        <li>lixiaoben1</li>
-    </ol>
-    <table align="center" border="1" cellpadding="0" cellspacing="0" width="500" height="500">
-        <tr>
-            <th>name</th>
-            <th rowspan="10">gender</th>
-            <th>hight</th>
-        </tr>
-        <tr align="center">
-            <td>lixiaoben1</td>
-            <td>lixiaoben1</td>
-            <td>lixiaoben1</td>
-        </tr>
-        <tr>
-            <td>lixiaoben1</td>
-            <td>lixiaoben1</td>
-            <td>lixiaoben1</td>
-        </tr>
-        <tr>
-            <td>lixiaoben1</td>
-            <td>lixiaoben1</td>
-            <td>lixiaoben1</td>
-            <!-- <td><img src="https://pro.upload.logomaker.com.cn/2023/07/2307180356301094.png?x-oss-process=image/resize,m_lfit,w_400,h_0"
-            alt="5555" /></td> -->
         </tr>
     </table>
-    <form>
-        <div> <label>姓名:</label></div>
-        <input type="text"> 2222 <a href="">help</a>
-        <div><label>年龄:</label></div>
-        <br>
-        <textarea name="kdo" id="" cols="30" rows="10"></textarea>
-        <div>
-            <select name="" id="">
-                <option value="male">nan</option>
-                <option value="woman">woman</option>
-            </select>
-        </div>
-        <div>
-            <button>22</button>
-        </div>
-        <div>
-            <img src="https://i2.hdslb.com/bfs/face/0caec3f6d08bc80abd8cabf1153559e6497ca479.jpg@240w_240h_1c_1s_!web-avatar-space-header.webp"
-                alt="" width="150">
+    <table id="shu">
+        <caption>试试鼠标</caption>
+        <tr>
+        </tr>
+    </table>
 
-        </div>
-        <div>
-            <dl>
-                <dt><ins><em><strong>join us</strong></em></ins></dt>
-                <dd>wechat</dd>
-                <dd>QQ</dd>
-                <dd>twitter</dd>
-            </dl>
-        </div>
-        <form>
-            姓名：<input type="text" name="name" value="输入姓名" maxlength="6"> <br>
-            年龄：<input type="password" value="输入年龄"><br>
-            爱好：<select>
-                <option value="选择">吃饭</option>
-                <option value="选择">睡觉</option>
-                <option value="选择">玩游戏</option>
-            </select><br>
-            性别：
-            <table cellspacing="0" cellspading="0" height="5" width="550">
-                <tr>
-                    <td align="center"><input type="radio" name="1"></td>
-                    <td align="center"><input type="radio" name="1"></td>
-                </tr>
-                <tr>
-                    <td align="center">man</td>
-                    <td align="center">woman</td>
-                </tr>
-
-            </table>
-
-        </form>
-
-    </form>
 </body>
 
 </html>
